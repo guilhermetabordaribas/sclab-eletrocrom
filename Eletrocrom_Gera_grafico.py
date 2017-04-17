@@ -118,7 +118,6 @@ class Gera_grafico():
         now = str(datetime.datetime.now())
         now = now.replace(' ', '_').replace(':', '-').replace('.', '-')
         now = 'relatorios/relatorio_'+now + '.csv'
-        print(now)
         ##Primeira Linha
         saveLine = 'Ciclos,Carga Red,Carga Oxi,EC%,Abs Red,Abs Oxi,EER,EEO\n'
         saveFile = open(now, 'a')
